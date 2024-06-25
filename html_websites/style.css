@@ -1,0 +1,129 @@
+/* changes the style for all paragraphs WITH the base tag */
+p{ background-color:aliceblue;
+    color: gray; 
+    font-family: sans-serif;
+}
+#notp{background-color: white;
+    color: black; 
+    font-family: "Kode Mono";
+
+}
+body{
+    background:linear-gradient(to bottom, skyblue,darkgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    /*background-image: url(/images/frustration.jpg); */
+
+
+
+}
+#b1{
+    border: 5px solid;
+    width: 300px;
+    height: 50px;
+    font-size: 23px;
+    animation: 5s linear 0s infinite running colourchange;
+    
+    
+    
+    
+
+
+}
+
+#b1:hover{animation: 5s linear 0s infinite running colourchange, 5s linear 0s infinite running whence1}
+/* skill test */
+
+#b2{border: 5px solid;
+    width: 100px ;
+    height: 50px;
+    font-size: 23px ;
+    background:linear-gradient(gray, yellow);
+
+}
+#copypasta{
+    float:left
+
+}
+
+a:link{
+    color: aqua;
+}
+a:visited{
+    color: black;
+}
+li:nth-child(even){
+    background-color: orange;
+}
+h1{
+    text-shadow: 0px 5px 5px purple;
+}
+h1:hover{
+    width: 200px;
+    box-shadow: 10px 10px 10px orange;
+}
+.fa-solid{
+    color: brown;
+    transform: translateX(100px);
+}
+@keyframes whence1{
+    from{margin-right: 100%;}
+    to{margin-left: 100%;}
+    100% {transform: rotateX(180deg)}
+    
+}
+@keyframes colourchange{
+    0%{background-color: pink;}
+    10%{background-color: purple;}
+    20%{background-color: rgb(0,0,30);}
+    30%{background-color: navy;}
+    40%{background-color: darkblue;}
+    60%{background-color: rgb(12, 70, 100);}
+    70%{background-color: rgb(14, 100, 60);}
+    80%{background-color: rgb(50, 0, 20);}
+    90%{background-color: rgb(100, 32, 88);}
+    100%{background-color: rgb(240, 32, 100);}
+
+}
+/*
+borders: border-style:name;
+includes: none, hidden, dotted, dashed, solid, groove, double, ridge, inset, outset.
+can use multiple at once, e.g: border-style: none dotted groove
+also: border: width(5px) :color: radius:(10 px): padding: 5px
+margin-left / right:auto, 0%, 50%. if you use margin-left and margin-right (auto) will be centred.
+
+
+
+float: will make other elements wrap around.
+e.g: float:left;
+to clear, do clear:side
+
+
+
+position: absolute/fixed/relative/sticky/static (static is default)
+offsets: side: 100px
+
+
+
+
+
+pseudo classes:
+used a:link and visited, others that also exist: hover, active
+
+
+
+transforming:
+transform: translateX/Y(100px)  , translate(x,y), rotateX/Y(180deg), scaleX/Y(1 is base), scale(x,y), skewX(45deg), skewY(Y), skew(X,Y), 
+matrix combines: scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()
+
+
+
+animation: duration  timing-function delay iteration-count playstate  direction name;
+
+
+
+
+
+*/
